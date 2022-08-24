@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p onmouseover="boldColor()" onmouseout="unboldColor()"><b>We</b> have just started <b>this</b> section for the users (<b>beginner</b> to intermediate) 
+        who <b> want</b> to work with <b>various</b> JavaScript <b>problems</b> and write scripts online
+        to <b>test</b> their JavaScript <b>skills</b>.
+    </p>
+        <script>
+            var bold = document.getElementsByTagName('b');
+            function boldColor(){
+                for(var i = 0; i<=bold.length; i++){
+                    bold[i].style.color = "red";
+                }
+            }
+            function unboldColor(){
+            for (var i = 0; i<=bold.length; i++){
+                bold[i].style.color  = "black";
+            }    
+            }
+        </script>
+</body>
+</html>
